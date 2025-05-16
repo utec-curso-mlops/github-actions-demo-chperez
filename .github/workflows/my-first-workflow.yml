@@ -6,5 +6,10 @@ jobs:
     steps:
       - name: Print Greetings
         run: echo "Hello world!" #echo es como un print en bash
+      - name: Print Multiple lines
+        run: |
+          echo "First Line ..."
+          echo "This is my first workflow"
+          echo "I am learning GitHub Actions"
       - name: Print Goodbye
         run: echo "Goodbye!"
