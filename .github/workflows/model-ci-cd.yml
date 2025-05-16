@@ -16,5 +16,10 @@ jobs:
           pip install -r requirements.txt  
       - name: Split Dataset
         run: python src/0-split-dataset.py
-      #- name: Test model
+      - name: Preprocess Data
+        run: python src/1-preprocess-dataset-train.py
+      - name: Prepare Dataset Test
+        run: python src/2-prepare-dataset-test.py
+      - name: Built Model
+        run: echo "Build model"
       #  run: echo "Test model"
