@@ -1,0 +1,9 @@
+name: My First Workflow
+on: workflow_dispatch # evento que dispara el workflow, en este caso manualmente
+jobs:
+  first-job:
+    runs-on: ubuntu-latest # en qué runner va a correr el job
+    steps:
+      - name: Print Greetings
+        run: echo "Hello world!" #echo es como un print en bash
+        run: echo "Goodbye!"
