@@ -6,4 +6,5 @@ jobs:
     steps:
       - name: Print Greetings
         run: echo "Hello world!" #echo es como un print en bash
+      - name: Print Goodbye
         run: echo "Goodbye!"
