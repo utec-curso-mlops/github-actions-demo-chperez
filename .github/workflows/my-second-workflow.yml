@@ -11,4 +11,4 @@ jobs:
         with:
           python-version: 3.12
       - name: Verify Python
-        run: echo "python version: $(python --version)"
+        run: python --version
