@@ -1,5 +1,5 @@
 name: My Second Workflow
-on: (workflow_dispatch, push) # evento que dispara el workflow, en este caso manualmente y al hacer push
+on: [workflow_dispatch, push] # evento que dispara el workflow, en este caso manualmente y al hacer push
 jobs:
   first-job:
     runs-on: ubuntu-latest
