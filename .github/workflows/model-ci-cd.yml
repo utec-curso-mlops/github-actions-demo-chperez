@@ -15,6 +15,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt  
       - name: Split Dataset
-        run: python scr/0-split-dataset.py
+        run: python src/0-split-dataset.py
       #- name: Test model
       #  run: echo "Test model"
